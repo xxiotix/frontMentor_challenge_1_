@@ -1,0 +1,134 @@
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px 20px 100px;
+    padding: 10px 15px;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700 !important
+}
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-all,.btn-active,.btn-inactive{
+    border: 1px solid hsl(226, 11%, 37%) !important;
+    background-color: hsl(225, 23%, 24%) !important;
+    font-family: 'Noto Sans' !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    padding: 5px 13px !important;
+    border-radius: 18px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-remove{
+    border: 1px solid hsl(226, 11%, 37%) !important;
+    background-color: hsl(225, 23%, 24%) !important;
+    font-family: 'Noto Sans' !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    padding: 5px 13px !important;
+    border-radius: 18px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-all:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000 !important;
+}
+
+.btn-active:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000 !important;
+}
+
+.btn-inactive:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000 !important;
+}
+
+.btn-remove:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000 !important;
+}
+
+.btn-all:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000;
+}
+
+.btn-active:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000;
+}
+
+.btn-inactive:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #000;
+}
+
+.btn-all:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+    color: #000 !important;
+}
+
+.btn-active:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+    color: #000 !important;
+}
+
+.btn-inactive:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+    color: #000 !important;
+}
+
+.btn-remove:focus{
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+}
+
+@media (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav h1{
+        font-size: 29px;
+    }
+
+    .btn-group{
+        gap: 25px;
+    }
+
+    .btn-all,.btn-active,.btn-inactive{
+        scale: 1.2;
+    }
+}
+
+@media (max-width: 992px) {
+    nav{
+        margin: 25px;
+    }
+
+    .btn-group{
+        gap: 23px;
+    }
+
+    .btn-all,.btn-active,.btn-inactive{
+        scale: 1.2;
+    }
+}

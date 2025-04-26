@@ -1,0 +1,47 @@
+header{
+    background-color: hsl(226, 25%, 17%);
+    margin: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.btn-mode {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 8px 8px 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-mode:hover{
+    background-color: hsl(226, 11%, 37%);
+}
+
+.btn-mode:focus{
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+}
+
+@media (max-width: 768px){
+    body{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        max-width: 768px;
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 992px){
+    header{
+        max-width: 992px;
+        margin: 15px 25px;
+    }
+}

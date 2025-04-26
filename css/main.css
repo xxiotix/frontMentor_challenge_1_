@@ -1,0 +1,123 @@
+.main{
+    margin: 0 100px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+}
+/* Card */
+.extension-card{
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    justify-content: space-between;
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid hsl(226, 11%, 37%);
+}
+
+.heading{
+    display: flex;
+    color: #fff;
+    font-family: 'Noto Sans';
+    gap: 13px;
+}
+
+.heading h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.heading p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.heading img{
+    width: 78px;
+    height: 78px;
+}
+
+.interactive-button-and-switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Switch Checkbox */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:hsl(226, 11%, 37%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(3, 86%, 64%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0 3px #02172c, 0 0 0 4px #FF5C5C;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .main{
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .main{
+      margin: 25px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

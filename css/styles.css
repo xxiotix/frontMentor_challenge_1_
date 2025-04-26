@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(header.css);
+@import url(navbar.css);
+@import url(main.css);
+@import url(footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1440px;
+    min-height: 1080px;
+    margin: 0;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    color: #fff;
+    font-family: 'Noto Sans';
+}
+
+body.light-mode {
+    background: hsl(217, 61%, 90%);
+    color: hsl(227, 75%, 14%);
+  }
+  
+  body.light-mode header {
+    background-color: hsl(200, 60%, 99%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.light-mode .btn-mode {
+    background-color: hsl(0, 0%, 93%);
+  }
+
+  body.light-mode .btn-mode:focus{
+    box-shadow: 0 0 0 3px hsl(200, 60%, 99%), 0 0 0 5px hsl(3, 71%, 56%);
+  }
+  
+  body.light-mode nav {
+    background-color: hsl(217, 61%, 90%);
+  }
+
+  body.light-mode nav h1{
+    color: hsl(227, 75%, 14%) !important;
+    font-weight: 700 !important;
+  }
+  
+  body.light-mode .btn-all,
+  body.light-mode .btn-active,
+  body.light-mode .btn-inactive,
+  body.light-mode .btn-remove {
+    background-color: hsl(200, 60%, 99%) !important;
+    border: 1px solid hsl(0, 0%, 78%) !important;
+    color: #000 !important;
+  }
+
+  body.light-mode .btn-all:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-active:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-inactive:hover{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-remove:hover{
+    background-color: hsl(3, 77%, 44%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-all:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-active:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-inactive:active{
+    background-color: hsl(3, 71%, 56%) !important;
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-all:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px hsl(217, 61%, 90%), 0 0 0 5px hsl(3, 71%, 56%);
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-active:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px hsl(217, 61%, 90%), 0 0 0 5px hsl(3, 71%, 56%);
+    color: #fff !important;
+  }
+
+  body.light-mode .btn-inactive:focus{
+    background-color: hsl(3, 71%, 56%) !important;
+    box-shadow: 0 0 0 3px hsl(217, 61%, 90%), 0 0 0 5px hsl(3, 71%, 56%);
+    color: #fff !important;
+  }
+
+  .btn-remove:focus{
+    box-shadow: 0 0 0 3px hsl(200, 60%, 99%), 0 0 0 5px hsl(3, 71%, 56%);
+  }
+  
+  body.light-mode .extension-card {
+    background-color: hsl(200, 60%, 99%);
+    border: 1px solid hsl(0, 0%, 78%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  body.light-mode .extension-card h1{
+    color: hsl(227, 75%, 14%) !important;
+  }
+
+  body.light-mode .extension-card p{
+    color: hsl(226, 11%, 37%) !important;
+    font-weight: 400;
+  }
+  
+  body.light-mode .slider {
+    background-color: #ccc;
+  }
+  
+  body.light-mode input:checked + .slider {
+    background-color: hsl(3, 86%, 64%);
+  }
+
+  body.light-mode input:focus + .slider {
+    box-shadow: 0 0 0 3px hsl(200, 60%, 99%), 0 0 0 5px hsl(3, 71%, 56%);
+  }
+  
+
+  @media (max-width: 768px){
+    body.light-mode{
+        max-width: 768px;
+    }
+}

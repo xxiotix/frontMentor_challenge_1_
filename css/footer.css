@@ -1,0 +1,15 @@
+footer {
+    margin: 80px 100px;
+    color: #fff;
+    font-size: 14px !important;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover{
+    color: hsl(238, 100%, 85%);
+    
+}
